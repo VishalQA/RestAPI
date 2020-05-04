@@ -15,7 +15,9 @@ public class GetAPITest extends TestBase {
 	String apiurl;
 	String url ;
 	RestClient restclient ;
-	
+//	public static void main(String[] args) {
+//	}
+
 
 	@BeforeMethod
 	public void setUp() throws ClientProtocolException, IOException {

@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
@@ -23,5 +23,19 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/com.beust.jcommander.source_1.72.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/com.beust.jcommander_1.72.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.apache-extras.beanshell.bsh.source_2.0.0.b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.testng.eclipse.maven_7.2.0.202004281604.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.testng.eclipse_7.2.0.202004281604.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.testng.source_7.2.0.r202003151902.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.testng_7.2.0.r202003151902.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.yaml.snakeyaml.source_1.21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/plugins/org.yaml.snakeyaml_1.21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/artifacts.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jaju_v/Downloads/org.testng.eclipse.updatesite/content.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
