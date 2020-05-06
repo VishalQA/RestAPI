@@ -14,8 +14,19 @@ import org.json.JSONObject;
 
 public class RestClient {
 
-	// 1. GET Method
+	// 1. GET Method without headers
 	public CloseableHttpResponse get (String url) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		// http get request
+		HttpGet httpget =new HttpGet(url); 
+		// hit the GET url
+		CloseableHttpResponse closeableHttpResponse = httpClient.execute(httpget); 
+		
+		return closeableHttpResponse;
+	}
+	
+	// 1. GET Method wit headers
+	public CloseableHttpResponse get (String url, HashMap<String, String> hashmap) throws ClientProtocolException, IOException {
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		// http get request
 		HttpGet httpget =new HttpGet(url); 
