@@ -2,6 +2,8 @@ package com.qa.client;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.http.Header;
 import org.apache.http.client.ClientProtocolException;
@@ -25,11 +27,16 @@ public class RestClient {
 		return closeableHttpResponse;
 	}
 	
-	// 1. GET Method wit headers
-	public CloseableHttpResponse get (String url, HashMap<String, String> hashmap) throws ClientProtocolException, IOException {
+	// 2. GET Method with headers
+	public CloseableHttpResponse get (String url, HashMap<String, String> headerMap) throws ClientProtocolException, IOException {
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		// http get request
 		HttpGet httpget =new HttpGet(url); 
+		
+		for (Entry<String, String> entry : headerMap.entrySet()) {
+			httpget.addHeader(entry.getKey() , entry.getValue());
+		}
+		
 		// hit the GET url
 		CloseableHttpResponse closeableHttpResponse = httpClient.execute(httpget); 
 		
